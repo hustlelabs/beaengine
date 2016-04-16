@@ -1,0 +1,8 @@
+BeaEngine.lib is a library coded in C (thanks to the IDE Code::Blocks and the compiler Pelles C ) created to decode instructions from 32 bits and 64 bits intel architectures. Actually, the only function available is called Disasm. It includes standard instruction set and instruction set from FPU, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, VMX technologies. For those who like analyzing malicious codes and more generally obfuscated codes, BeaEngine decodes undocumented instructions called "alias" on the web site sandpile. In all scenarios, it sends back a complex structure that describes precisely the analyzed instructions.
+
+You can use it in C (usable with Visual Studio, Pelles C , LCC or MingW), in assembler (usable with masm32, nasm, fasm, GoAsm) in Python and in Delphi. You can use it in ring3 and in ring0 because it does not use windows API. It had been thought to do a lot of tasks. First, you can retrieve mnemonic and operands according to the specified syntax : intel syntax for Nasm, masm32 et masm64, GoAsm32 and GoAsm64, fasm and AT&T syntax. Next, you can realize accurate analysis on data-flow and control-flow to generate slices or obfuscation patterns. This pack contains the library compiled in 32 bits and 64 bits, its source code under LGPL3 license, numerous examples more or less complex including headers for following langages : C, Python, Delphi, masm32, nasm, fasm ,GoAsm.
+
+BeaEngine has been implemented using opcode tables seen in the intel documentation completed by tables proposed by Christian Ludloff on his web site www.sandpile.org
+
+To see the complete documentation and access to the forum, go to the BeaEngine website :
+
